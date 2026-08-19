@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    url: jdbc:sqlite:${app.sqlite.file}
+    driver-class-name: org.sqlite.JDBC
+
+  sql:
+    init:
+      mode: always
+      encoding: UTF-8
+
+app:
+  sqlite:
+    # 相对路径（相对于启动目录），也可以改为绝对路径，例如 /var/data/sqlite.db
+    file: ./sqlite.db
+
+logging:
+  level:
+    root: INFO
+    org:
+      springframework:
+        jdbc: DEBUG
