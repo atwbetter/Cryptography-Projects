@@ -1,4 +1,4 @@
-package com.atwbetter.crypto;
+package com.atwbetter.crypto.utlis;
 
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;

@@ -1,7 +1,7 @@
-package com.example.cryptoproject.controller;
+package com.atwbetter.crypto.controller;
 
-import com.example.cryptoproject.model.User;
-import com.example.cryptoproject.repository.UserRepository;
+import com.atwbetter.crypto.model.User;
+import com.atwbetter.crypto.repository.UserRepository;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 

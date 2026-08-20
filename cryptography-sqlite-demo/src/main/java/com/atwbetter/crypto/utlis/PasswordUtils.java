@@ -1,4 +1,4 @@
-package com.atwbetter.crypto;
+package com.atwbetter.crypto.utlis;
 
 /**
  * Password utilities: bcrypt and Argon2 wrappers.

@@ -1,4 +1,4 @@
-package com.example.cryptoproject.model;
+package com.atwbetter.crypto.model;
 
 public class User {
     private Long id;

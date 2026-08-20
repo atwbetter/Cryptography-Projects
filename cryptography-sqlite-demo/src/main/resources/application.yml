@@ -1,6 +1,7 @@
 spring:
   datasource:
-    url: jdbc:sqlite:${app.sqlite.file}
+    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:sqlite:D:\Users\software\project\back\Cryptography-Projects\cryptography-sqlite-demo\src\main\resources\sqlite.db
     driver-class-name: org.sqlite.JDBC
 
   sql:
@@ -8,10 +9,16 @@ spring:
       mode: always
       encoding: UTF-8
 
+server:
+  port: 8088
+  servlet:
+    # 应用的访问路径
+    context-path: /
+
 app:
   sqlite:
-    # 相对路径（相对于启动目录），也可以改为绝对路径，例如 /var/data/sqlite.db
-    file: ./sqlite.db
+    # 相对路径（相对于启动目录），也可以改为绝对路径，例如 /var/data/sqlite.db ./sqlite.db
+    file: D:\Users\software\project\back\Cryptography-Projects\cryptography-sqlite-demo\src\main\resources\sqlite.db
 
 logging:
   level:

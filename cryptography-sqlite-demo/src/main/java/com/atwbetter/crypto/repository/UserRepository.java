@@ -1,6 +1,6 @@
-package com.example.cryptoproject.repository;
+package com.atwbetter.crypto.repository;
 
-import com.example.cryptoproject.model.User;
+import com.atwbetter.crypto.model.User;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.jdbc.core.simple.SimpleJdbcInsert;
