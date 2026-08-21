@@ -1,13 +1,17 @@
 spring:
   datasource:
-    type: com.zaxxer.hikari.HikariDataSource
-    url: jdbc:sqlite:D:\Users\software\project\back\Cryptography-Projects\cryptography-sqlite-demo\src\main\resources\sqlite.db
-    driver-class-name: org.sqlite.JDBC
+#    type: com.zaxxer.hikari.HikariDataSource
+#    url: jdbc:sqlite:${app.sqlite.file}
+#    driver-class-name: org.sqlite.JDBC
+    type: ${spring.datasource.type}
+    url: jdbc:postgresql://192.168.5.70:5432/postgres?useUnicode=true&characterEncoding=utf8&useSSL=true&autoReconnect=true&reWriteBatchedInserts=true
+    username: postgres
+    password: postgres
 
-  sql:
-    init:
-      mode: always
-      encoding: UTF-8
+#  sql:
+#    init:
+#      mode: always
+#      encoding: UTF-8
 
 server:
   port: 8088
@@ -18,7 +22,7 @@ server:
 app:
   sqlite:
     # 相对路径（相对于启动目录），也可以改为绝对路径，例如 /var/data/sqlite.db ./sqlite.db
-    file: D:\Users\software\project\back\Cryptography-Projects\cryptography-sqlite-demo\src\main\resources\sqlite.db
+    file: ./sqlite.db
 
 logging:
   level:
