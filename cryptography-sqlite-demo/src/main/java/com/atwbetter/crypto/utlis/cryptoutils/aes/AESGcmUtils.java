@@ -56,8 +56,8 @@ public class AESGcmUtils {
     public static void main(String[] args) {
         try {
             // 明文数据
-            String plainText = "hello world";
-            // 加密密钥，16字节长度
+            String plainText = "hello.";
+            // 加密密钥，16字节长度  AES-128 (16字节);AES-192 (24字节);AES-256 (32字节)
             byte[] key = "1234567890123456".getBytes();
             // 使用加密方法对明文进行加密
             String cipherText = encrypt(plainText, key);
